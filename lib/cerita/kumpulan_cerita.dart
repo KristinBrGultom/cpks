@@ -1,3 +1,4 @@
+// ignore: unused_import
 import 'package:cpks/cerita/tambah_cerita.dart';
 import 'package:flutter/material.dart';
 
@@ -172,7 +173,7 @@ class _MyAppState extends State<kumpulan_cerita> {
                  fontWeight: FontWeight.bold,
                  fontSize: 18),),
              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const tambah_cerita()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>  tambah_cerita()));
              },
       ),
       ]),

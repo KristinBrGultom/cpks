@@ -1,7 +1,12 @@
+// ignore_for_file: unused_import
+
 import 'package:cpks/cerita/kumpulan_cerita.dart';
+import 'package:cpks/cerita/tambah_cerita.dart';
 import 'package:cpks/ui_view/Login.dart';
 import 'package:cpks/ui_view/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:cpks/cerita/baca_cerita.dart';
+import 'package:cpks/cerita/perpus_cerita.dart';
 
 void main() => runApp(const MyApp());
 

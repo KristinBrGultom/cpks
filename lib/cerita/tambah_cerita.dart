@@ -1,11 +1,12 @@
+// ignore: unused_import
+import 'package:cpks/cerita/tambah_cerita.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const tambah_cerita());
+import 'baca_cerita.dart';
 
-// ignore: camel_case_types
+void main() => runApp(tambah_cerita());
+
 class tambah_cerita extends StatefulWidget {
-  const tambah_cerita({Key? key}) : super(key: key);
-
   @override
   _MyAppState createState() => _MyAppState();
   // Widget build(BuildContext context) {
@@ -27,31 +28,53 @@ class _MyAppState extends State<tambah_cerita> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text("Tambah Cerita"),
+        title: const Text("Tulis Cerpen"),
       ),
       backgroundColor: Colors.purple,
-     body: Container( 
-      padding: const EdgeInsets.only(left: 20), 
-      margin: const EdgeInsets.all(20), 
-      height: 90, 
-      width: 100, 
-      alignment: Alignment.topCenter, 
-        color: Colors.white, 
-       child: const Text( 
-       'tambah gambar', 
-      style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 8, 8, 8)), 
- 
-       ))), 
-       ); 
-    // ignore: dead_code
-    Container( 
-       color: const Color.fromARGB(255, 249, 248, 250), 
-      alignment: Alignment.topLeft, 
-        child: const Text( 
-       "Isi ", 
-        style: TextStyle(fontSize: 30, color: Colors.white)), 
-        height: 200.0, 
-        width: 200.0, 
-  );
+      body: ListView(children: [
+        Expanded(
+          child: Container(
+            padding: const EdgeInsets.only(left: 20, top: 30),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text(
+                  "CERPEN",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Container(
+             padding: const EdgeInsets.only(left :10),
+             width: 500,
+             height: 500,
+             color: Colors.white,
+             child: TextFormField(
+               decoration: const InputDecoration(
+                   hintText: "Isi Cerita.....",
+                   border: InputBorder.none
+               ),
+               
+             ),
+           ),
+           
+        TextButton(
+             child: const Text("Upload", style: TextStyle(color: Colors.white,
+                 fontWeight: FontWeight.bold,
+                 fontSize: 18),),
+             onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => baca_cerita()));
+             },
+      ),
+      ]
+    )
+ )
+    );
   }
 }
