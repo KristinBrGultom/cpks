@@ -83,7 +83,16 @@ class _MyAppState extends State<baca_cerita> {
           height: 10,
           
         ),
-        
+        MaterialButton(
+             padding: const EdgeInsets.all(20),
+             minWidth: 250,
+             color: Colors.white,
+             child: const Text("Perpustakaan", style: TextStyle(color: Colors.blue, fontSize: 15, fontWeight: FontWeight.bold),),
+             onPressed: () {
+              Navigator.push(
+                   context, MaterialPageRoute(builder: (context) => perpus_cerita()));
+             },
+        )
       ])
         )
     );
