@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "478842953043",
+    "project_id": "cpks-84022",
+    "storage_bucket": "cpks-84022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478842953043:android:3525bfa177766add3a15a6",
+        "android_client_info": {
+          "package_name": "com.kelompok.cpks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478842953043-id2cjck644jkvc385eo3b8keed3ovhje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kelompok.cpks",
+            "certificate_hash": "8fc48d6a1ead537ed2439cfea94ae262e266d700"
+          }
+        },
+        {
+          "client_id": "478842953043-11f7bopbkekfl7tmjfv82ji3dc8fu1r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWvrP7-Gz27Jqdb1MYDdVJ8hVHROhos1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478842953043-11f7bopbkekfl7tmjfv82ji3dc8fu1r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

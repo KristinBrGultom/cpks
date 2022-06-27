@@ -3,6 +3,8 @@ import 'package:cpks/ui_view/signup.dart';
 // ignore: unnecessary_import
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:cpks/helper/authentication.dart';
 
 
 void main() => runApp(Login());

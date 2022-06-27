@@ -7,6 +7,7 @@ import 'package:cpks/ui_view/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:cpks/cerita/baca_cerita.dart';
 import 'package:cpks/cerita/perpus_cerita.dart';
+import 'package:cpks/helper/authentication.dart';
 
 void main() => runApp(const MyApp());
 
